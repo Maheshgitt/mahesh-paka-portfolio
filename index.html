@@ -993,7 +993,8 @@
   }
 
   .detail-list li::before {
-    content: '✓';
+    content: 'checkmark';
+    content: '\2713';
     color: var(--primary-blue);
     font-weight: bold;
   }
@@ -1205,7 +1206,7 @@
       <li><a href="#training" onclick="closeMobileMenu()">Training</a></li>
       <li><a href="#education" onclick="closeMobileMenu()">Education</a></li>
       <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
-      <li><a href="Resumeinfineon.pdf" download class="btn-download">📥 Download Resume</a></li>
+      <li><a href="Resumeinfineon.pdf" download class="btn-download">&#x1F4E5; Download Resume</a></li>
     </ul>
   </nav>
 </header>
@@ -1215,7 +1216,7 @@
   <div class="hero-content">
     <div class="hero-text">
       <div class="hero-badge">Open to Opportunities</div>
-      <h1>Innovating in <span class="highlight">VLSI Design</span>, Embedded Systems & <span class="highlight">AI-Powered Solutions</span></h1>
+      <h1>Innovating in <span class="highlight">VLSI Design</span>, Embedded Systems &amp; <span class="highlight">AI-Powered Solutions</span></h1>
       <p>Passionate electronics engineer specializing in neuromorphic circuit design, real-time embedded systems, and AI-driven applications. Transforming complex hardware challenges into elegant, scalable solutions.</p>
       <div class="cta-buttons">
         <a href="#projects" class="btn btn-primary">Explore Projects</a>
@@ -1225,7 +1226,7 @@
     <div class="hero-image-box">
       <img src="portfolio-profile.png" alt="Mahesh Paka" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="hero-image-placeholder" style="display: none;">
-        <div class="hero-image-placeholder-icon">👤</div>
+        <div class="hero-image-placeholder-icon">&#x1F464;</div>
         <div style="font-weight: 500; color: var(--primary-blue);">Add Your Photo</div>
         <div style="font-size: 14px; margin-top: 8px;">profile-photo.jpg</div>
       </div>
@@ -1241,7 +1242,79 @@
     <p class="section-subtitle">Explore innovative projects in VLSI design, embedded systems, and AI</p>
   </div>
 
-  <!-- Project 1 -->
+  <!-- Project 1: AI Tech News App -->
+  <div class="project-card gemini-border" onclick="openDetail('aitechnews')">
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-type">AI &amp; Android</div>
+        <div class="project-date">May 2026</div>
+      </div>
+      <h3 class="project-title">AI Tech News Android App</h3>
+      <p class="project-description">Full-stack AI-powered Android news application with a FastAPI backend deployed on Render. Integrates NewsData.io for live tech headlines, Groq LLM for AI-generated article summaries, Firebase Cloud Messaging for push notifications, and an in-app AI chatbot with persistent conversation history — all built with Kotlin and Jetpack Compose.</p>
+      <div class="card-tags">
+        <span class="tag">Kotlin</span>
+        <span class="tag">Jetpack Compose</span>
+        <span class="tag">FastAPI</span>
+        <span class="tag">Groq LLM</span>
+        <span class="tag">Firebase FCM</span>
+        <span class="tag">NewsData.io</span>
+      </div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
+    </div>
+    <div class="project-image-box">
+      <img src="Newsapplogo.png" alt="AI Tech News App" onerror="this.style.display='none';">
+    </div>
+  </div>
+
+  <!-- Project 2: Aegis Node -->
+  <div class="project-card gemini-border" onclick="openDetail('aegisnode')">
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-type">Embedded IoT</div>
+        <div class="project-date">Mar 2026</div>
+      </div>
+      <h3 class="project-title">Aegis Node – ESP32 Wearable Safety System</h3>
+      <p class="project-description">ESP32-based wearable safety device integrating MAX30102 (heart rate/SpO2), MPU-6050 (fall detection), and MQ-2 (gas sensor) with an OLED display and buzzer alerts. Features a real-time SSE-based web dashboard with Chart.js waveforms and tiered safety alert logic for continuous health and environment monitoring.</p>
+      <div class="card-tags">
+        <span class="tag">ESP32</span>
+        <span class="tag">MAX30102</span>
+        <span class="tag">MPU-6050</span>
+        <span class="tag">MQ-2</span>
+        <span class="tag">SSE</span>
+        <span class="tag">Chart.js</span>
+      </div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
+    </div>
+    <div class="project-image-box">
+      <img src="aegisnode.png" alt="Aegis Node Wearable" onerror="this.style.display='none';">
+    </div>
+  </div>
+
+  <!-- Project 3: BER Checker -->
+  <div class="project-card gemini-border" onclick="openDetail('berchecker')">
+    <div class="project-content">
+      <div class="project-header">
+        <div class="project-type">FPGA &amp; Digital Design</div>
+        <div class="project-date">Feb 2026</div>
+      </div>
+      <h3 class="project-title">BER Checker – FPGA Hamming(7,4) SECDED</h3>
+      <p class="project-description">Implemented a Bit Error Rate checker on the Nexys 4 Artix-7 FPGA board with full Hamming(7,4) SECDED error correction. Evolved from basic XOR detection to a complete design with four display modes, BTNC reset, and all 33 testbench cases passing in Xilinx Vivado.</p>
+      <div class="card-tags">
+        <span class="tag">Verilog</span>
+        <span class="tag">Xilinx Vivado</span>
+        <span class="tag">Nexys 4 Artix-7</span>
+        <span class="tag">Hamming(7,4)</span>
+        <span class="tag">SECDED</span>
+        <span class="tag">FPGA</span>
+      </div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
+    </div>
+    <div class="project-image-box">
+      <img src="bercheck.png" alt="BER Checker FPGA" onerror="this.style.display='none';">
+    </div>
+  </div>
+
+  <!-- Project 4: Neuromorphic -->
   <div class="project-card gemini-border" onclick="openDetail('neuromorphic')">
     <div class="project-content">
       <div class="project-header">
@@ -1256,14 +1329,14 @@
         <span class="tag">90nm CMOS</span>
         <span class="tag">Analog Design</span>
       </div>
-      <div class="view-details">View Details <span>→</span></div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
     </div>
     <div class="project-image-box">
       <img src="neuromorphic.jpeg" alt="Neuromorphic Circuit" onerror="this.style.display='none';">
     </div>
   </div>
 
-  <!-- Project 2 -->
+  <!-- Project 5: SignalHub -->
   <div class="project-card gemini-border" onclick="openDetail('signalhub')">
     <div class="project-content">
       <div class="project-header">
@@ -1271,25 +1344,25 @@
         <div class="project-date">Nov 2025</div>
       </div>
       <h3 class="project-title">SignalHub – Audio Modulation Analyzer</h3>
-      <p class="project-description">Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8″ SPI TFT display. Implemented AM/FM modulation and down sampling with optimized embedded DSP routines.</p>
+      <p class="project-description">Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8&#x22; SPI TFT display. Implemented AM/FM modulation and down sampling with optimized embedded DSP routines.</p>
       <div class="card-tags">
         <span class="tag">ESP32</span>
         <span class="tag">INMP441</span>
         <span class="tag">DSP</span>
         <span class="tag">AM/FM Modulation</span>
       </div>
-      <div class="view-details">View Details <span>→</span></div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
     </div>
     <div class="project-image-box">
       <img src="audio.jpeg" alt="SignalHub Project" onerror="this.style.display='none';">
     </div>
   </div>
 
-  <!-- Project 3 -->
+  <!-- Project 6: Sign Language -->
   <div class="project-card gemini-border" onclick="openDetail('signlanguage')">
     <div class="project-content">
       <div class="project-header">
-        <div class="project-type">AI & Computer Vision</div>
+        <div class="project-type">AI &amp; Computer Vision</div>
         <div class="project-date">Oct 2025</div>
       </div>
       <h3 class="project-title">Sign Language Detection System</h3>
@@ -1300,7 +1373,7 @@
         <span class="tag">Roboflow</span>
         <span class="tag">Deep Learning</span>
       </div>
-      <div class="view-details">View Details <span>→</span></div>
+      <div class="view-details">View Details <span>&#x2192;</span></div>
     </div>
     <div class="project-image-box">
       <img src="sign.jpeg" alt="Sign Language Detection" onerror="this.style.display='none';">
@@ -1312,16 +1385,17 @@
 <section id="skills">
   <div class="section-header">
     <div class="section-tag">Technical Expertise</div>
-    <h2 class="section-title">Skills & Technologies</h2>
+    <h2 class="section-title">Skills &amp; Technologies</h2>
     <p class="section-subtitle">A comprehensive toolkit for electronics, embedded systems, and software development</p>
   </div>
 
   <div class="tabs">
     <div class="tab active" onclick="showTab(event, 'languages')">Languages</div>
-    <div class="tab" onclick="showTab(event, 'tools')">Tools & Platforms</div>
+    <div class="tab" onclick="showTab(event, 'tools')">Tools &amp; Platforms</div>
     <div class="tab" onclick="showTab(event, 'frameworks')">Frameworks</div>
   </div>
 
+  <!-- LANGUAGES TAB -->
   <div id="languages" class="tab-content active">
     <div class="cards-grid">
       <div class="card gemini-border">
@@ -1330,7 +1404,7 @@
         <p class="card-description">Advanced proficiency in systems programming, data structures, and algorithms</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">🐍</div>
+        <div class="card-icon">&#x1F40D;</div>
         <h3 class="card-title">Python</h3>
         <p class="card-description">Expert in AI/ML development, data analysis, and automation scripting</p>
       </div>
@@ -1344,65 +1418,120 @@
         <h3 class="card-title">C Programming</h3>
         <p class="card-description">Embedded C for microcontroller programming and hardware interfacing</p>
       </div>
+      <div class="card gemini-border">
+        <div class="card-icon">V</div>
+        <h3 class="card-title">Verilog</h3>
+        <p class="card-description">RTL design and FPGA implementation for digital hardware systems</p>
+      </div>
     </div>
   </div>
 
+  <!-- TOOLS & PLATFORMS TAB -->
   <div id="tools" class="tab-content">
     <div class="cards-grid">
       <div class="card gemini-border">
-        <div class="card-icon">◆</div>
+        <div class="card-icon">&#x25C6;</div>
         <h3 class="card-title">Cadence Virtuoso</h3>
         <p class="card-description">Analog IC design, schematic capture, and layout design</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">▣</div>
+        <div class="card-icon">&#x25A3;</div>
         <h3 class="card-title">Xilinx Vivado</h3>
         <p class="card-description">FPGA design and implementation with Verilog/VHDL</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">🔧</div>
+        <div class="card-icon">&#x1F527;</div>
         <h3 class="card-title">Proteus</h3>
         <p class="card-description">Circuit simulation and PCB design</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">⚙️</div>
+        <div class="card-icon">&#x2699;&#xFE0F;</div>
         <h3 class="card-title">Arduino IDE</h3>
         <p class="card-description">Embedded systems development and prototyping</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">📊</div>
+        <div class="card-icon">&#x1F4CA;</div>
         <h3 class="card-title">MATLAB</h3>
         <p class="card-description">Signal processing, control systems, and data analysis</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">⚡</div>
+        <div class="card-icon">&#x26A1;</div>
         <h3 class="card-title">Keil µVision</h3>
         <p class="card-description">Microcontroller development and debugging</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F916;</div>
+        <h3 class="card-title">Groq LLM API</h3>
+        <p class="card-description">High-speed LLM inference for AI-powered summarization and chatbot features</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F4F0;</div>
+        <h3 class="card-title">NewsData.io</h3>
+        <p class="card-description">Real-time news API integration for live tech headline feeds</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x2764;&#xFE0F;</div>
+        <h3 class="card-title">MAX30102 / MPU-6050 / MQ-2</h3>
+        <p class="card-description">Biometric and environmental sensors for heart rate, SpO2, fall detection, and gas monitoring</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x2601;&#xFE0F;</div>
+        <h3 class="card-title">Render</h3>
+        <p class="card-description">Cloud platform for deploying FastAPI backends with continuous deployment</p>
+      </div>
+      <!-- NEW: Android Studio -->
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F4F1;</div>
+        <h3 class="card-title">Android Studio</h3>
+        <p class="card-description">Official IDE for Android app development with integrated emulator and debugging tools</p>
+      </div>
+      <!-- NEW: Antigravity -->
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F310;</div>
+        <h3 class="card-title">Antigravity</h3>
+        <p class="card-description">Web development platform for building and deploying modern web applications</p>
+      </div>
+      <!-- NEW: STM32CubeIDE -->
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F539;</div>
+        <h3 class="card-title">STM32CubeIDE</h3>
+        <p class="card-description">Integrated development environment for STM32 microcontroller programming and debugging</p>
       </div>
     </div>
   </div>
 
+  <!-- FRAMEWORKS TAB -->
   <div id="frameworks" class="tab-content">
     <div class="cards-grid">
       <div class="card gemini-border">
-        <div class="card-icon">📱</div>
+        <div class="card-icon">&#x1F4F1;</div>
         <h3 class="card-title">Jetpack Compose</h3>
         <p class="card-description">Modern Android UI development toolkit</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">🔥</div>
+        <div class="card-icon">&#x1F525;</div>
         <h3 class="card-title">Firebase</h3>
-        <p class="card-description">Backend services and real-time database integration</p>
+        <p class="card-description">Backend services, real-time database, and FCM push notifications</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">📡</div>
+        <div class="card-icon">&#x1F4E1;</div>
         <h3 class="card-title">Retrofit</h3>
         <p class="card-description">Type-safe HTTP client for Android and Java</p>
       </div>
       <div class="card gemini-border">
-        <div class="card-icon">🎯</div>
+        <div class="card-icon">&#x1F3AF;</div>
         <h3 class="card-title">Simulink</h3>
         <p class="card-description">Model-based design for control systems</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x26A1;</div>
+        <h3 class="card-title">FastAPI</h3>
+        <p class="card-description">High-performance Python web framework for building RESTful backend APIs</p>
+      </div>
+      <div class="card gemini-border">
+        <div class="card-icon">&#x1F4C8;</div>
+        <h3 class="card-title">Chart.js</h3>
+        <p class="card-description">JavaScript charting library for real-time waveform and data visualization on web dashboards</p>
       </div>
     </div>
   </div>
@@ -1412,7 +1541,7 @@
 <section id="training">
   <div class="section-header">
     <div class="section-tag">Professional Development</div>
-    <h2 class="section-title">Training & Certifications</h2>
+    <h2 class="section-title">Training &amp; Certifications</h2>
     <p class="section-subtitle">Continuous learning through industry-recognized programs</p>
   </div>
 
@@ -1431,10 +1560,10 @@
         <span class="tag">Firebase</span>
         <span class="tag">Retrofit</span>
       </div>
-      <div class="view-details">View Certificate <span>→</span></div>
+      <div class="view-details">View Certificate <span>&#x2192;</span></div>
     </div>
     <div class="project-image-box">
-      <img src="androidappdev.jpeg" alt="Android Training" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <img src="androidlogo.png" alt="Android Training" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
     </div>
   </div>
 
@@ -1453,7 +1582,7 @@
         <span class="tag">Keil µVision</span>
         <span class="tag">Proteus</span>
       </div>
-      <div class="view-details">View Certificate <span>→</span></div>
+      <div class="view-details">View Certificate <span>&#x2192;</span></div>
     </div>
     <div class="project-image-box">
       <img src="embedded.png" alt="Embedded Systems Training" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -1464,28 +1593,28 @@
     <h3 style="font-family: 'Google Sans', sans-serif; font-size: 24px; margin-bottom: 24px;">Certifications</h3>
     <div class="cards-grid">
       <div class="card gemini-border" onclick="openDetail('dbms-cert')">
-        <div class="card-icon">📜</div>
+        <div class="card-icon">&#x1F4DC;</div>
         <h3 class="card-title">Database Management System</h3>
         <p class="card-description">NPTEL/Swayam • September 2025</p>
-        <div class="view-details">View Certificate <span>→</span></div>
+        <div class="view-details">View Certificate <span>&#x2192;</span></div>
       </div>
       <div class="card gemini-border" onclick="openDetail('android-cert')">
-        <div class="card-icon">📱</div>
+        <div class="card-icon">&#x1F4F1;</div>
         <h3 class="card-title">Android App Development</h3>
         <p class="card-description">NSDC/Internshala • July 2025</p>
-        <div class="view-details">View Certificate <span>→</span></div>
+        <div class="view-details">View Certificate <span>&#x2192;</span></div>
       </div>
       <div class="card gemini-border" onclick="openDetail('embedded-cert')">
-        <div class="card-icon">🔌</div>
+        <div class="card-icon">&#x1F50C;</div>
         <h3 class="card-title">Embedded Systems</h3>
         <p class="card-description">NSDC/Internshala • May 2025</p>
-        <div class="view-details">View Certificate <span>→</span></div>
+        <div class="view-details">View Certificate <span>&#x2192;</span></div>
       </div>
       <div class="card gemini-border" onclick="openDetail('python-cert')">
-        <div class="card-icon">🐍</div>
+        <div class="card-icon">&#x1F40D;</div>
         <h3 class="card-title">Introduction to Python</h3>
         <p class="card-description">Scalar • April 2023</p>
-        <div class="view-details">View Certificate <span>→</span></div>
+        <div class="view-details">View Certificate <span>&#x2192;</span></div>
       </div>
     </div>
   </div>
@@ -1501,9 +1630,9 @@
 
   <div class="education-cards">
     <div class="education-card gemini-border">
-      <div class="education-icon">🎓</div>
+      <div class="education-icon">&#x1F393;</div>
       <div class="education-content">
-        <h3 class="education-degree">B.Tech in Electronics & Communication Engineering</h3>
+        <h3 class="education-degree">B.Tech in Electronics &amp; Communication Engineering</h3>
         <div class="education-school">Lovely Professional University, Punjab</div>
         <div class="education-info">Since August 2023</div>
         <div class="education-score">CGPA: 7.55 / 10.0</div>
@@ -1511,7 +1640,7 @@
     </div>
 
     <div class="education-card gemini-border">
-      <div class="education-icon">📚</div>
+      <div class="education-icon">&#x1F4DA;</div>
       <div class="education-content">
         <h3 class="education-degree">Intermediate (12th Grade)</h3>
         <div class="education-school">Sree Sai Junior College, Hanamkonda, Telangana</div>
@@ -1521,7 +1650,7 @@
     </div>
 
     <div class="education-card gemini-border">
-      <div class="education-icon">🏫</div>
+      <div class="education-icon">&#x1F3EB;</div>
       <div class="education-content">
         <h3 class="education-degree">Matriculation (10th Grade)</h3>
         <div class="education-school">MJPTBCWREIS School, Hanamkonda, Telangana</div>
@@ -1536,34 +1665,34 @@
 <section id="contact">
   <div class="section-header">
     <div class="section-tag">Get in Touch</div>
-    <h2 class="section-title">Contact me</h2>
+    <h2 class="section-title">Connect me</h2>
     <p class="section-subtitle">Let's connect and discuss opportunities in electronics and embedded systems</p>
   </div>
 
   <div class="contact-grid">
     <a href="tel:+918464985128" class="contact-card gemini-border">
-      <div class="contact-icon">📱</div>
+      <div class="contact-icon">&#x1F4F1;</div>
       <div class="contact-info">
         <div class="contact-label">Phone</div>
         <div class="contact-value">+91 8464985128</div>
       </div>
     </a>
     <a href="mailto:maheshpaka115@gmail.com" class="contact-card gemini-border">
-      <div class="contact-icon">✉️</div>
+      <div class="contact-icon">&#x2709;&#xFE0F;</div>
       <div class="contact-info">
         <div class="contact-label">Email</div>
         <div class="contact-value">maheshpaka115@gmail.com</div>
       </div>
     </a>
     <a href="https://www.linkedin.com/in/mahesh-paka-jan115" target="_blank" class="contact-card gemini-border">
-      <div class="contact-icon">💼</div>
+      <div class="contact-icon">&#x1F4BC;</div>
       <div class="contact-info">
         <div class="contact-label">LinkedIn</div>
         <div class="contact-value">mahesh-paka-jan115</div>
       </div>
     </a>
     <a href="https://github.com/Maheshgitt" target="_blank" class="contact-card gemini-border">
-      <div class="contact-icon">⚙️</div>
+      <div class="contact-icon">&#x2699;&#xFE0F;</div>
       <div class="contact-info">
         <div class="contact-label">GitHub</div>
         <div class="contact-value">Maheshgitt</div>
@@ -1574,12 +1703,170 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 Mahesh Paka — Electronics & Embedded Systems Engineer</p>
+  <p>&#x00A9; 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer</p>
 </footer>
 
-<!-- DETAIL MODALS -->
+<!-- ===================== DETAIL MODALS ===================== -->
 
-<!-- Neuromorphic Project Modal with Image Carousel -->
+<!-- AI Tech News Modal -->
+<div id="aitechnews-modal" class="detail-modal">
+  <div class="detail-content">
+    <div class="detail-header">
+      <button class="detail-close" onclick="closeDetail('aitechnews')">&times;</button>
+      <div class="detail-type">AI &amp; Android</div>
+      <h1 class="detail-title">AI Tech News Android App</h1>
+      <div class="detail-date">May 2026</div>
+    </div>
+    <div class="detail-body">
+      <div class="image-carousel" id="aitechnews-carousel">
+        <div class="carousel-track" id="aitechnews-track">
+          <div class="carousel-slide"><img src="aitechnews1.jpeg" alt="AI Tech News Home Feed"></div>
+          <div class="carousel-slide"><img src="aitechnews2.jpeg" alt="AI Tech News Chatbot"></div>
+          <div class="carousel-slide"><img src="aitechnews3.jpeg" alt="AI Tech News Summary"></div>
+          <div class="carousel-slide"><img src="aitechnews4.jpeg" alt="AI Tech News Notifications"></div>
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('aitechnews', -1)">&#x2039;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('aitechnews', 1)">&#x203A;</button>
+        <div class="carousel-indicators" id="aitechnews-indicators"></div>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Project Overview</h3>
+        <p class="detail-text">A feature-complete AI-powered Android news application with a Python FastAPI backend deployed on Render. The app fetches live tech headlines via NewsData.io, generates AI summaries using the Groq LLM API, sends push notifications through Firebase Cloud Messaging, and provides an in-app AI chatbot with persistent conversation history — all delivered through a modern Jetpack Compose UI.</p>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Key Features</h3>
+        <ul class="detail-list">
+          <li>Live tech news feed powered by NewsData.io API</li>
+          <li>Groq LLM integration for one-tap AI article summaries</li>
+          <li>Firebase Cloud Messaging for background push notifications</li>
+          <li>In-app AI chatbot with persistent chat history</li>
+          <li>FastAPI backend deployed on Render with RESTful endpoints</li>
+          <li>Modern Jetpack Compose UI with Material 3 design</li>
+        </ul>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Technologies Used</h3>
+        <div class="card-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Groq LLM</span>
+          <span class="tag">Firebase FCM</span>
+          <span class="tag">NewsData.io</span>
+          <span class="tag">Render</span>
+          <span class="tag">Retrofit</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Aegis Node Modal -->
+<div id="aegisnode-modal" class="detail-modal">
+  <div class="detail-content">
+    <div class="detail-header">
+      <button class="detail-close" onclick="closeDetail('aegisnode')">&times;</button>
+      <div class="detail-type">Embedded IoT</div>
+      <h1 class="detail-title">Aegis Node – ESP32 Wearable Safety System</h1>
+      <div class="detail-date">March 2026</div>
+    </div>
+    <div class="detail-body">
+      <div class="image-carousel" id="aegisnode-carousel">
+        <div class="carousel-track" id="aegisnode-track">
+          <div class="carousel-slide"><img src="aegisnode1.jpeg" alt="Aegis Node Hardware"></div>
+          <div class="carousel-slide"><img src="aegisnode2.jpeg" alt="Aegis Node OLED Display"></div>
+          <div class="carousel-slide"><img src="aegisnode3.jpeg" alt="Aegis Node Web Dashboard"></div>
+          <div class="carousel-slide"><img src="aegisnode4.jpeg" alt="Aegis Node Waveforms"></div>
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('aegisnode', -1)">&#x2039;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('aegisnode', 1)">&#x203A;</button>
+        <div class="carousel-indicators" id="aegisnode-indicators"></div>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Project Overview</h3>
+        <p class="detail-text">Aegis Node is an ESP32-based wearable safety system designed for real-time health and environment monitoring. It integrates a MAX30102 pulse oximeter, MPU-6050 IMU for fall detection, and MQ-2 gas sensor, with live data shown on an OLED and streamed to a browser dashboard via Server-Sent Events (SSE) with animated Chart.js waveforms and tiered safety alerts.</p>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Key Features</h3>
+        <ul class="detail-list">
+          <li>MAX30102 for real-time heart rate and SpO2 monitoring</li>
+          <li>MPU-6050 IMU with fall detection algorithm</li>
+          <li>MQ-2 gas/smoke sensor with threshold-based alerts</li>
+          <li>OLED display for local real-time readouts</li>
+          <li>SSE-based real-time web dashboard with Chart.js waveforms</li>
+          <li>Tiered buzzer safety alert system</li>
+        </ul>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Technologies Used</h3>
+        <div class="card-tags">
+          <span class="tag">ESP32</span>
+          <span class="tag">MAX30102</span>
+          <span class="tag">MPU-6050</span>
+          <span class="tag">MQ-2</span>
+          <span class="tag">SSE</span>
+          <span class="tag">Chart.js</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">Arduino IDE</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BER Checker Modal -->
+<div id="berchecker-modal" class="detail-modal">
+  <div class="detail-content">
+    <div class="detail-header">
+      <button class="detail-close" onclick="closeDetail('berchecker')">&times;</button>
+      <div class="detail-type">FPGA &amp; Digital Design</div>
+      <h1 class="detail-title">BER Checker – FPGA Hamming(7,4) SECDED</h1>
+      <div class="detail-date">February 2026</div>
+    </div>
+    <div class="detail-body">
+      <div class="image-carousel" id="berchecker-carousel">
+        <div class="carousel-track" id="berchecker-track">
+          <div class="carousel-slide"><img src="berchecker1.jpeg" alt="BER Checker FPGA Board"></div>
+          <div class="carousel-slide"><img src="berchecker2.jpeg" alt="BER Checker Vivado Simulation"></div>
+          <div class="carousel-slide"><img src="berchecker3.jpeg" alt="BER Checker Testbench Results"></div>
+          <div class="carousel-slide"><img src="berchecker4.jpeg" alt="BER Checker Display Modes"></div>
+        </div>
+        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('berchecker', -1)">&#x2039;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('berchecker', 1)">&#x203A;</button>
+        <div class="carousel-indicators" id="berchecker-indicators"></div>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Project Overview</h3>
+        <p class="detail-text">A complete Bit Error Rate checker implemented on the Nexys 4 Artix-7 FPGA board using Xilinx Vivado. The design evolved from basic XOR error detection through to a full Hamming(7,4) SECDED (Single Error Correction, Double Error Detection) implementation, with four selectable display modes, BTNC-triggered reset, and a comprehensive testbench with all 33 test cases verified and passing.</p>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Key Features</h3>
+        <ul class="detail-list">
+          <li>Hamming(7,4) SECDED for single-bit correction and double-bit detection</li>
+          <li>Four display modes for real-time BER monitoring on 7-segment display</li>
+          <li>BTNC hardware reset with debounce logic</li>
+          <li>All 33 testbench cases verified and passing</li>
+          <li>Synthesized and implemented on Nexys 4 Artix-7 FPGA</li>
+          <li>Modular Verilog design with clean timing constraints</li>
+        </ul>
+      </div>
+      <div class="detail-section">
+        <h3 class="detail-section-title">Technologies Used</h3>
+        <div class="card-tags">
+          <span class="tag">Verilog</span>
+          <span class="tag">Xilinx Vivado</span>
+          <span class="tag">Nexys 4 Artix-7</span>
+          <span class="tag">Hamming(7,4)</span>
+          <span class="tag">SECDED</span>
+          <span class="tag">FPGA</span>
+          <span class="tag">Testbench</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Neuromorphic Project Modal -->
 <div id="neuromorphic-modal" class="detail-modal">
   <div class="detail-content">
     <div class="detail-header">
@@ -1591,23 +1878,17 @@
     <div class="detail-body">
       <div class="image-carousel" id="neuromorphic-carousel">
         <div class="carousel-track" id="neuromorphic-track">
-          <div class="carousel-slide">
-            <img src="neuromorphicdesign.jpeg" alt="Neuromorphic Circuit 1">
-          </div>
-          <div class="carousel-slide">
-            <img src="neuromorphicwaveform.jpeg" alt="Neuromorphic Circuit 2">
-          </div>
+          <div class="carousel-slide"><img src="neuromorphicdesign.jpeg" alt="Neuromorphic Circuit 1"></div>
+          <div class="carousel-slide"><img src="neuromorphicwaveform.jpeg" alt="Neuromorphic Circuit 2"></div>
         </div>
-        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('neuromorphic', -1)">‹</button>
-        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('neuromorphic', 1)">›</button>
+        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('neuromorphic', -1)">&#x2039;</button>
+        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('neuromorphic', 1)">&#x203A;</button>
         <div class="carousel-indicators" id="neuromorphic-indicators"></div>
       </div>
-      
       <div class="detail-section">
         <h3 class="detail-section-title">Project Overview</h3>
         <p class="detail-text">Designed a transistor-level neuromorphic synapse and neuron cell to emulate biological spike behavior. This project explores brain-inspired computing architectures that can process information more efficiently than traditional von Neumann systems.</p>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Key Features</h3>
         <ul class="detail-list">
@@ -1618,7 +1899,6 @@
           <li>Scalable architecture for neural network implementations</li>
         </ul>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Technologies Used</h3>
         <div class="card-tags">
@@ -1646,23 +1926,20 @@
       <div class="detail-image-box">
         <img src="signalhub.jpeg" alt="SignalHub Project">
       </div>
-      
       <div class="detail-section">
         <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8″ SPI TFT display. The system implements AM/FM modulation analysis with optimized embedded DSP routines for educational and practical applications.</p>
+        <p class="detail-text">Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8&#x22; SPI TFT display. The system implements AM/FM modulation analysis with optimized embedded DSP routines for educational and practical applications.</p>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Key Features</h3>
         <ul class="detail-list">
           <li>Real-time audio capture using I2S protocol with INMP441 microphone</li>
-          <li>Live waveform visualization on 2.8″ SPI TFT display</li>
+          <li>Live waveform visualization on 2.8&#x22; SPI TFT display</li>
           <li>AM/FM modulation and demodulation algorithms</li>
           <li>Down sampling with optimized DSP routines</li>
           <li>User-friendly interface for signal analysis</li>
         </ul>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Technologies Used</h3>
         <div class="card-tags">
@@ -1683,7 +1960,7 @@
   <div class="detail-content">
     <div class="detail-header">
       <button class="detail-close" onclick="closeDetail('signlanguage')">&times;</button>
-      <div class="detail-type">AI & Computer Vision</div>
+      <div class="detail-type">AI &amp; Computer Vision</div>
       <h1 class="detail-title">Sign Language Detection System</h1>
       <div class="detail-date">October 2025</div>
     </div>
@@ -1691,12 +1968,10 @@
       <div class="detail-image-box">
         <img src="signlanguage.png" alt="Sign Language Detection">
       </div>
-      
       <div class="detail-section">
         <h3 class="detail-section-title">Project Overview</h3>
         <p class="detail-text">Developed a Python-based system to identify and translate sign language gestures for handicapped individuals. This accessibility-focused project uses computer vision and deep learning to bridge communication gaps.</p>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Key Features</h3>
         <ul class="detail-list">
@@ -1707,7 +1982,6 @@
           <li>Accessibility-focused design for hearing-impaired users</li>
         </ul>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Technologies Used</h3>
         <div class="card-tags">
@@ -1736,12 +2010,10 @@
       <div class="detail-image-box">
         <img src="certificateandroid.png" alt="Android Training Certificate">
       </div>
-      
       <div class="detail-section">
         <h3 class="detail-section-title">Training Overview</h3>
         <p class="detail-text">Completed hands-on training in Android App Development with practical exposure to UI design, Firebase integration, and API handling. Built and tested Android applications using Kotlin and Android Studio.</p>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Skills Acquired</h3>
         <ul class="detail-list">
@@ -1752,7 +2024,6 @@
           <li>Mobile development lifecycle and deployment</li>
         </ul>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Technologies Covered</h3>
         <div class="card-tags">
@@ -1780,12 +2051,10 @@
       <div class="detail-image-box">
         <img src="certificateembedded.png" alt="Embedded Training Certificate">
       </div>
-      
       <div class="detail-section">
         <h3 class="detail-section-title">Training Overview</h3>
         <p class="detail-text">Completed hands-on training in Embedded Systems with practical exposure to microcontroller programming and circuit interfacing. Built hardware projects using Arduino, ESP32, sensors, and actuators.</p>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Skills Acquired</h3>
         <ul class="detail-list">
@@ -1796,7 +2065,6 @@
           <li>Debugging with Keil µVision</li>
         </ul>
       </div>
-
       <div class="detail-section">
         <h3 class="detail-section-title">Technologies Covered</h3>
         <div class="card-tags">
@@ -1893,32 +2161,35 @@
 </div>
 
 <script>
-// Image Carousel State
+// ===================== CAROUSEL STATE =====================
 const carousels = {
-  neuromorphic: { currentSlide: 0, totalSlides: 2 }
+  neuromorphic: { currentSlide: 0, totalSlides: 2 },
+  aitechnews:   { currentSlide: 0, totalSlides: 4 },
+  aegisnode:    { currentSlide: 0, totalSlides: 4 },
+  berchecker:   { currentSlide: 0, totalSlides: 4 }
 };
 
 function initCarousels() {
-  // Initialize neuromorphic carousel indicators
-  const neuromorphicIndicators = document.getElementById('neuromorphic-indicators');
-  for (let i = 0; i < carousels.neuromorphic.totalSlides; i++) {
-    const indicator = document.createElement('div');
-    indicator.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
-    indicator.onclick = () => goToSlide('neuromorphic', i);
-    neuromorphicIndicators.appendChild(indicator);
-  }
+  ['neuromorphic', 'aitechnews', 'aegisnode', 'berchecker'].forEach(id => {
+    const container = document.getElementById(id + '-indicators');
+    if (!container) return;
+    for (let i = 0; i < carousels[id].totalSlides; i++) {
+      const indicator = document.createElement('div');
+      indicator.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
+      indicator.onclick = () => goToSlide(id, i);
+      container.appendChild(indicator);
+    }
+  });
 }
 
 function changeSlide(carouselId, direction) {
   const carousel = carousels[carouselId];
   carousel.currentSlide += direction;
-  
   if (carousel.currentSlide < 0) {
     carousel.currentSlide = carousel.totalSlides - 1;
   } else if (carousel.currentSlide >= carousel.totalSlides) {
     carousel.currentSlide = 0;
   }
-  
   updateCarousel(carouselId);
 }
 
@@ -1931,18 +2202,15 @@ function updateCarousel(carouselId) {
   const carousel = carousels[carouselId];
   const track = document.getElementById(carouselId + '-track');
   const indicators = document.getElementById(carouselId + '-indicators').children;
-  
-  track.style.transform = `translateX(-${carousel.currentSlide * 100}%)`;
-  
+  track.style.transform = 'translateX(-' + (carousel.currentSlide * 100) + '%)';
   for (let i = 0; i < indicators.length; i++) {
     indicators[i].className = 'carousel-indicator' + (i === carousel.currentSlide ? ' active' : '');
   }
 }
 
-// Initialize carousels when page loads
 document.addEventListener('DOMContentLoaded', initCarousels);
 
-// Mobile Menu
+// ===================== MOBILE MENU =====================
 function toggleMobileMenu() {
   const navLinks = document.getElementById('navLinks');
   const menuBtn = document.querySelector('.mobile-menu-btn');
@@ -1957,19 +2225,17 @@ function closeMobileMenu() {
   menuBtn.classList.remove('active');
 }
 
-// Tab System
+// ===================== TAB SYSTEM =====================
 function showTab(event, tabName) {
   const tabContents = document.querySelectorAll('.tab-content');
   tabContents.forEach(content => content.classList.remove('active'));
-
   const tabs = document.querySelectorAll('.tab');
   tabs.forEach(tab => tab.classList.remove('active'));
-
   document.getElementById(tabName).classList.add('active');
   event.currentTarget.classList.add('active');
 }
 
-// Modal System
+// ===================== MODAL SYSTEM =====================
 function openDetail(modalId) {
   document.getElementById(modalId + '-modal').classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -1980,7 +2246,6 @@ function closeDetail(modalId) {
   document.body.style.overflow = 'auto';
 }
 
-// Close modal on outside click
 document.querySelectorAll('.detail-modal').forEach(modal => {
   modal.addEventListener('click', function(e) {
     if (e.target === this) {
@@ -1990,7 +2255,6 @@ document.querySelectorAll('.detail-modal').forEach(modal => {
   });
 });
 
-// Close modal on Escape key
 document.addEventListener('keydown', function(e) {
   if (e.key === 'Escape') {
     document.querySelectorAll('.detail-modal.active').forEach(modal => {
@@ -2000,7 +2264,7 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// Smooth scroll for navigation
+// ===================== SMOOTH SCROLL =====================
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const href = this.getAttribute('href');
@@ -2014,24 +2278,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Cursor tracking for gradient border effect
+// ===================== CURSOR GRADIENT BORDER =====================
 document.querySelectorAll('.gemini-border, .card, .project-card, .contact-card, .education-card').forEach(card => {
   card.addEventListener('mousemove', function(e) {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    
     const angleRad = Math.atan2(y - centerY, x - centerX);
     const angleDeg = angleRad * (180 / Math.PI) + 90;
-    
-    card.style.setProperty('--gradient-angle', `${angleDeg}deg`);
+    card.style.setProperty('--gradient-angle', angleDeg + 'deg');
   });
 });
 </script>
 
 </body>
-
 </html>
