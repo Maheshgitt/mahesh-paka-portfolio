@@ -1243,7 +1243,7 @@
   </div>
 
   <!-- Project 1: AI Tech News App -->
-  <div class="project-card gemini-border" onclick="openDetail('aitechnews')">
+  <div class="project-card gemini-border" onclick="window.location.href='ai-tech-news.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">AI &amp; Android</div>
@@ -1267,7 +1267,7 @@
   </div>
 
   <!-- Project 2: Aegis Node -->
-  <div class="project-card gemini-border" onclick="openDetail('aegisnode')">
+  <div class="project-card gemini-border" onclick="window.location.href='aegis-node.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">Embedded IoT</div>
@@ -1291,7 +1291,7 @@
   </div>
 
   <!-- Project 3: BER Checker -->
-  <div class="project-card gemini-border" onclick="openDetail('berchecker')">
+  <div class="project-card gemini-border" onclick="window.location.href='ber-checker.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">FPGA &amp; Digital Design</div>
@@ -1315,7 +1315,7 @@
   </div>
 
   <!-- Project 4: Neuromorphic -->
-  <div class="project-card gemini-border" onclick="openDetail('neuromorphic')">
+  <div class="project-card gemini-border" onclick="window.location.href='neuromorphic.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">Neuromorphic VLSI</div>
@@ -1337,7 +1337,7 @@
   </div>
 
   <!-- Project 5: SignalHub -->
-  <div class="project-card gemini-border" onclick="openDetail('signalhub')">
+  <div class="project-card gemini-border" onclick="window.location.href='signalhub.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">Embedded DSP</div>
@@ -1359,7 +1359,7 @@
   </div>
 
   <!-- Project 6: Sign Language -->
-  <div class="project-card gemini-border" onclick="openDetail('signlanguage')">
+  <div class="project-card gemini-border" onclick="window.location.href='signlanguage.html'">
     <div class="project-content">
       <div class="project-header">
         <div class="project-type">AI &amp; Computer Vision</div>
@@ -1706,296 +1706,7 @@
   <p>&#x00A9; 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer</p>
 </footer>
 
-<!-- ===================== DETAIL MODALS ===================== -->
-
-<!-- AI Tech News Modal -->
-<div id="aitechnews-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('aitechnews')">&times;</button>
-      <div class="detail-type">AI &amp; Android</div>
-      <h1 class="detail-title">AI Tech News Android App</h1>
-      <div class="detail-date">May 2026</div>
-    </div>
-    <div class="detail-body">
-      <div class="image-carousel" id="aitechnews-carousel">
-        <div class="carousel-track" id="aitechnews-track">
-          <div class="carousel-slide"><img src="aitechnews1.jpeg" alt="AI Tech News Home Feed"></div>
-          <div class="carousel-slide"><img src="aitechnews2.jpeg" alt="AI Tech News Chatbot"></div>
-          <div class="carousel-slide"><img src="aitechnews3.jpeg" alt="AI Tech News Summary"></div>
-          <div class="carousel-slide"><img src="aitechnews4.jpeg" alt="AI Tech News Notifications"></div>
-        </div>
-        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('aitechnews', -1)">&#x2039;</button>
-        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('aitechnews', 1)">&#x203A;</button>
-        <div class="carousel-indicators" id="aitechnews-indicators"></div>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">A feature-complete AI-powered Android news application with a Python FastAPI backend deployed on Render. The app fetches live tech headlines via NewsData.io, generates AI summaries using the Groq LLM API, sends push notifications through Firebase Cloud Messaging, and provides an in-app AI chatbot with persistent conversation history — all delivered through a modern Jetpack Compose UI.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>Live tech news feed powered by NewsData.io API</li>
-          <li>Groq LLM integration for one-tap AI article summaries</li>
-          <li>Firebase Cloud Messaging for background push notifications</li>
-          <li>In-app AI chatbot with persistent chat history</li>
-          <li>FastAPI backend deployed on Render with RESTful endpoints</li>
-          <li>Modern Jetpack Compose UI with Material 3 design</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">Kotlin</span>
-          <span class="tag">Jetpack Compose</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">Groq LLM</span>
-          <span class="tag">Firebase FCM</span>
-          <span class="tag">NewsData.io</span>
-          <span class="tag">Render</span>
-          <span class="tag">Retrofit</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Aegis Node Modal -->
-<div id="aegisnode-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('aegisnode')">&times;</button>
-      <div class="detail-type">Embedded IoT</div>
-      <h1 class="detail-title">Aegis Node – ESP32 Wearable Safety System</h1>
-      <div class="detail-date">March 2026</div>
-    </div>
-    <div class="detail-body">
-      <div class="image-carousel" id="aegisnode-carousel">
-        <div class="carousel-track" id="aegisnode-track">
-          <div class="carousel-slide"><img src="aegisnode1.jpeg" alt="Aegis Node Hardware"></div>
-          <div class="carousel-slide"><img src="aegisnode2.jpeg" alt="Aegis Node OLED Display"></div>
-          <div class="carousel-slide"><img src="aegisnode3.jpeg" alt="Aegis Node Web Dashboard"></div>
-          <div class="carousel-slide"><img src="aegisnode4.jpeg" alt="Aegis Node Waveforms"></div>
-        </div>
-        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('aegisnode', -1)">&#x2039;</button>
-        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('aegisnode', 1)">&#x203A;</button>
-        <div class="carousel-indicators" id="aegisnode-indicators"></div>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">Aegis Node is an ESP32-based wearable safety system designed for real-time health and environment monitoring. It integrates a MAX30102 pulse oximeter, MPU-6050 IMU for fall detection, and MQ-2 gas sensor, with live data shown on an OLED and streamed to a browser dashboard via Server-Sent Events (SSE) with animated Chart.js waveforms and tiered safety alerts.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>MAX30102 for real-time heart rate and SpO2 monitoring</li>
-          <li>MPU-6050 IMU with fall detection algorithm</li>
-          <li>MQ-2 gas/smoke sensor with threshold-based alerts</li>
-          <li>OLED display for local real-time readouts</li>
-          <li>SSE-based real-time web dashboard with Chart.js waveforms</li>
-          <li>Tiered buzzer safety alert system</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">ESP32</span>
-          <span class="tag">MAX30102</span>
-          <span class="tag">MPU-6050</span>
-          <span class="tag">MQ-2</span>
-          <span class="tag">SSE</span>
-          <span class="tag">Chart.js</span>
-          <span class="tag">Embedded C</span>
-          <span class="tag">Arduino IDE</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- BER Checker Modal -->
-<div id="berchecker-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('berchecker')">&times;</button>
-      <div class="detail-type">FPGA &amp; Digital Design</div>
-      <h1 class="detail-title">BER Checker – FPGA Hamming(7,4) SECDED</h1>
-      <div class="detail-date">February 2026</div>
-    </div>
-    <div class="detail-body">
-      <div class="image-carousel" id="berchecker-carousel">
-        <div class="carousel-track" id="berchecker-track">
-          <div class="carousel-slide"><img src="berchecker1.jpeg" alt="BER Checker FPGA Board"></div>
-          <div class="carousel-slide"><img src="berchecker2.jpeg" alt="BER Checker Vivado Simulation"></div>
-          <div class="carousel-slide"><img src="berchecker3.jpeg" alt="BER Checker Testbench Results"></div>
-          <div class="carousel-slide"><img src="berchecker4.jpeg" alt="BER Checker Display Modes"></div>
-        </div>
-        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('berchecker', -1)">&#x2039;</button>
-        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('berchecker', 1)">&#x203A;</button>
-        <div class="carousel-indicators" id="berchecker-indicators"></div>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">A complete Bit Error Rate checker implemented on the Nexys 4 Artix-7 FPGA board using Xilinx Vivado. The design evolved from basic XOR error detection through to a full Hamming(7,4) SECDED (Single Error Correction, Double Error Detection) implementation, with four selectable display modes, BTNC-triggered reset, and a comprehensive testbench with all 33 test cases verified and passing.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>Hamming(7,4) SECDED for single-bit correction and double-bit detection</li>
-          <li>Four display modes for real-time BER monitoring on 7-segment display</li>
-          <li>BTNC hardware reset with debounce logic</li>
-          <li>All 33 testbench cases verified and passing</li>
-          <li>Synthesized and implemented on Nexys 4 Artix-7 FPGA</li>
-          <li>Modular Verilog design with clean timing constraints</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">Verilog</span>
-          <span class="tag">Xilinx Vivado</span>
-          <span class="tag">Nexys 4 Artix-7</span>
-          <span class="tag">Hamming(7,4)</span>
-          <span class="tag">SECDED</span>
-          <span class="tag">FPGA</span>
-          <span class="tag">Testbench</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Neuromorphic Project Modal -->
-<div id="neuromorphic-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('neuromorphic')">&times;</button>
-      <div class="detail-type">Neuromorphic VLSI</div>
-      <h1 class="detail-title">Neuromorphic Neuron–Synapse Circuit</h1>
-      <div class="detail-date">December 2025</div>
-    </div>
-    <div class="detail-body">
-      <div class="image-carousel" id="neuromorphic-carousel">
-        <div class="carousel-track" id="neuromorphic-track">
-          <div class="carousel-slide"><img src="neuromorphicdesign.jpeg" alt="Neuromorphic Circuit 1"></div>
-          <div class="carousel-slide"><img src="neuromorphicwaveform.jpeg" alt="Neuromorphic Circuit 2"></div>
-        </div>
-        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide('neuromorphic', -1)">&#x2039;</button>
-        <button class="carousel-btn carousel-btn-next" onclick="changeSlide('neuromorphic', 1)">&#x203A;</button>
-        <div class="carousel-indicators" id="neuromorphic-indicators"></div>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">Designed a transistor-level neuromorphic synapse and neuron cell to emulate biological spike behavior. This project explores brain-inspired computing architectures that can process information more efficiently than traditional von Neumann systems.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>Implemented using 90nm CMOS technology for optimal performance</li>
-          <li>Current-mirror output stage for measurable neuron spike responses</li>
-          <li>Biological spike behavior emulation with tunable parameters</li>
-          <li>Low power consumption design suitable for edge computing</li>
-          <li>Scalable architecture for neural network implementations</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">Cadence Virtuoso</span>
-          <span class="tag">Spectre Simulator</span>
-          <span class="tag">90nm CMOS</span>
-          <span class="tag">Analog Design</span>
-          <span class="tag">SPICE</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- SignalHub Project Modal -->
-<div id="signalhub-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('signalhub')">&times;</button>
-      <div class="detail-type">Embedded DSP</div>
-      <h1 class="detail-title">SignalHub – Audio Modulation Analyzer</h1>
-      <div class="detail-date">November 2025</div>
-    </div>
-    <div class="detail-body">
-      <div class="detail-image-box">
-        <img src="signalhub.jpeg" alt="SignalHub Project">
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8&#x22; SPI TFT display. The system implements AM/FM modulation analysis with optimized embedded DSP routines for educational and practical applications.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>Real-time audio capture using I2S protocol with INMP441 microphone</li>
-          <li>Live waveform visualization on 2.8&#x22; SPI TFT display</li>
-          <li>AM/FM modulation and demodulation algorithms</li>
-          <li>Down sampling with optimized DSP routines</li>
-          <li>User-friendly interface for signal analysis</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">ESP32</span>
-          <span class="tag">INMP441</span>
-          <span class="tag">I2S Protocol</span>
-          <span class="tag">DSP</span>
-          <span class="tag">AM/FM Modulation</span>
-          <span class="tag">SPI TFT</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Sign Language Project Modal -->
-<div id="signlanguage-modal" class="detail-modal">
-  <div class="detail-content">
-    <div class="detail-header">
-      <button class="detail-close" onclick="closeDetail('signlanguage')">&times;</button>
-      <div class="detail-type">AI &amp; Computer Vision</div>
-      <h1 class="detail-title">Sign Language Detection System</h1>
-      <div class="detail-date">October 2025</div>
-    </div>
-    <div class="detail-body">
-      <div class="detail-image-box">
-        <img src="signlanguage.png" alt="Sign Language Detection">
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Project Overview</h3>
-        <p class="detail-text">Developed a Python-based system to identify and translate sign language gestures for handicapped individuals. This accessibility-focused project uses computer vision and deep learning to bridge communication gaps.</p>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Key Features</h3>
-        <ul class="detail-list">
-          <li>Real-time hand gesture detection using webcam</li>
-          <li>Custom trained model with Roboflow dataset</li>
-          <li>Translation of sign language to text output</li>
-          <li>Google Colab integration for model training</li>
-          <li>Accessibility-focused design for hearing-impaired users</li>
-        </ul>
-      </div>
-      <div class="detail-section">
-        <h3 class="detail-section-title">Technologies Used</h3>
-        <div class="card-tags">
-          <span class="tag">Python</span>
-          <span class="tag">OpenCV</span>
-          <span class="tag">Roboflow</span>
-          <span class="tag">Deep Learning</span>
-          <span class="tag">Google Colab</span>
-          <span class="tag">TensorFlow</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- ===================== DETAIL MODALS (Training & Certificates) ===================== -->
 
 <!-- Android Training Modal -->
 <div id="android-training-modal" class="detail-modal">
@@ -2161,55 +1872,6 @@
 </div>
 
 <script>
-// ===================== CAROUSEL STATE =====================
-const carousels = {
-  neuromorphic: { currentSlide: 0, totalSlides: 2 },
-  aitechnews:   { currentSlide: 0, totalSlides: 4 },
-  aegisnode:    { currentSlide: 0, totalSlides: 4 },
-  berchecker:   { currentSlide: 0, totalSlides: 4 }
-};
-
-function initCarousels() {
-  ['neuromorphic', 'aitechnews', 'aegisnode', 'berchecker'].forEach(id => {
-    const container = document.getElementById(id + '-indicators');
-    if (!container) return;
-    for (let i = 0; i < carousels[id].totalSlides; i++) {
-      const indicator = document.createElement('div');
-      indicator.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
-      indicator.onclick = () => goToSlide(id, i);
-      container.appendChild(indicator);
-    }
-  });
-}
-
-function changeSlide(carouselId, direction) {
-  const carousel = carousels[carouselId];
-  carousel.currentSlide += direction;
-  if (carousel.currentSlide < 0) {
-    carousel.currentSlide = carousel.totalSlides - 1;
-  } else if (carousel.currentSlide >= carousel.totalSlides) {
-    carousel.currentSlide = 0;
-  }
-  updateCarousel(carouselId);
-}
-
-function goToSlide(carouselId, slideIndex) {
-  carousels[carouselId].currentSlide = slideIndex;
-  updateCarousel(carouselId);
-}
-
-function updateCarousel(carouselId) {
-  const carousel = carousels[carouselId];
-  const track = document.getElementById(carouselId + '-track');
-  const indicators = document.getElementById(carouselId + '-indicators').children;
-  track.style.transform = 'translateX(-' + (carousel.currentSlide * 100) + '%)';
-  for (let i = 0; i < indicators.length; i++) {
-    indicators[i].className = 'carousel-indicator' + (i === carousel.currentSlide ? ' active' : '');
-  }
-}
-
-document.addEventListener('DOMContentLoaded', initCarousels);
-
 // ===================== MOBILE MENU =====================
 function toggleMobileMenu() {
   const navLinks = document.getElementById('navLinks');
@@ -2235,7 +1897,7 @@ function showTab(event, tabName) {
   event.currentTarget.classList.add('active');
 }
 
-// ===================== MODAL SYSTEM =====================
+// ===================== MODAL SYSTEM (Training & Certificates) =====================
 function openDetail(modalId) {
   document.getElementById(modalId + '-modal').classList.add('active');
   document.body.style.overflow = 'hidden';
