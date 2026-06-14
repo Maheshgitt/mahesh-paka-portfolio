@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Tech News Android App | Mahesh Paka</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">Mahesh <span>Paka</span></a>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">All Projects</a></li>
+      <li><a href="#problem">Problem Statement</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#future">Future Advancements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PROJECT HERO -->
+<section class="project-hero">
+  <div class="project-hero-content">
+    <div class="project-hero-card">
+      <div class="project-hero-text">
+        <div class="hero-badge">AI &amp; Android</div>
+        <h1>AI Tech News <span class="highlight">Android App</span></h1>
+        <div class="project-hero-meta">May 2026 &nbsp;•&nbsp; Kotlin, Jetpack Compose, FastAPI, Groq LLM</div>
+        <p>Full-stack AI-powered Android news application with a FastAPI backend deployed on Render. Integrates NewsData.io for live tech headlines, Groq LLM for AI-generated article summaries, Firebase Cloud Messaging for push notifications, and an in-app AI chatbot with persistent conversation history — all built with Kotlin and Jetpack Compose.</p>
+        <div class="cta-buttons">
+          <a href="#project" class="btn btn-primary">View Project</a>
+          <a href="index.html#projects" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-hero-icon-box">
+        <img src="Newsapplogo.png" alt="AI Tech News App" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="image-carousel" id="image-carousel">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-slide"><img src="aitechnews1.jpeg" alt="AI Tech News Home Feed"></div>
+      <div class="carousel-slide"><img src="aitechnews2.jpeg" alt="AI Tech News Chatbot"></div>
+      <div class="carousel-slide"><img src="aitechnews3.jpeg" alt="AI Tech News Summary"></div>
+      <div class="carousel-slide"><img src="aitechnews4.jpeg" alt="AI Tech News Notifications"></div>
+    </div>
+    <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)">‹</button>
+    <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)">›</button>
+    <div class="carousel-indicators" id="carousel-indicators"></div>
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section id="problem">
+  <div class="section-header">
+    <div class="section-tag">Problem Statement</div>
+    <h2 class="section-title">Why this project?</h2>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Tech enthusiasts and professionals struggle to keep up with the constant flow of technology news scattered across dozens of websites and apps. Reading full-length articles is time-consuming, and most existing news apps offer no way to interact with the content, ask follow-up questions, or get a quick digest of what an article actually says.</p>
+    <p class="content-text">There was a clear need for a single, lightweight Android application that aggregates live tech headlines, condenses them into quick AI-generated summaries, notifies users of important updates in real time, and lets users converse naturally with an AI assistant about the news they're reading.</p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+  <div class="section-header">
+    <div class="section-tag">The Project</div>
+    <h2 class="section-title">What I built</h2>
+    <p class="section-subtitle">A feature-complete AI-powered Android news application with a Python FastAPI backend deployed on Render.</p>
+  </div>
+  <div class="content-box">
+    <p class="content-text">The app fetches live tech headlines via the NewsData.io API, generates AI summaries using the Groq LLM API, sends push notifications through Firebase Cloud Messaging, and provides an in-app AI chatbot with persistent conversation history — all delivered through a modern Jetpack Compose UI backed by a Retrofit-driven FastAPI service.</p>
+  </div>
+  <div class="content-box">
+    <h3 class="card-title">Key Features</h3>
+    <ul class="detail-list">
+      <li>Live tech news feed powered by the NewsData.io API</li>
+      <li>Groq LLM integration for one-tap AI article summaries</li>
+      <li>Firebase Cloud Messaging for background push notifications</li>
+      <li>In-app AI chatbot with persistent chat history</li>
+      <li>FastAPI backend deployed on Render with RESTful endpoints</li>
+      <li>Modern Jetpack Compose UI with Material 3 design</li>
+    </ul>
+    <h3 class="detail-section-title">Technologies Used</h3>
+    <div class="card-tags">
+      <span class="tag">Kotlin</span>
+      <span class="tag">Jetpack Compose</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Groq LLM</span>
+      <span class="tag">Firebase FCM</span>
+      <span class="tag">NewsData.io</span>
+      <span class="tag">Render</span>
+      <span class="tag">Retrofit</span>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+  <div class="section-header">
+    <div class="section-tag">Results</div>
+    <h2 class="section-title">Outcomes</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">⚡</div>
+      <h3 class="card-title">Faster News Consumption</h3>
+      <p class="card-description">AI-generated summaries let users grasp the essence of an article in seconds instead of reading the full text.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🔔</div>
+      <h3 class="card-title">Real-Time Alerts</h3>
+      <p class="card-description">Firebase Cloud Messaging delivers breaking tech news directly to the device, even when the app is closed.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">💬</div>
+      <h3 class="card-title">Conversational Interface</h3>
+      <p class="card-description">A built-in AI chatbot with persistent history lets users ask questions and dig deeper into stories naturally.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">☁️</div>
+      <h3 class="card-title">Production-Ready Backend</h3>
+      <p class="card-description">A FastAPI service deployed on Render reliably handles API aggregation, summarization, and chat requests.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <div class="section-header">
+    <div class="section-tag">Real-World Use</div>
+    <h2 class="section-title">Applications</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">📱</div>
+      <h3 class="card-title">Personal News Companion</h3>
+      <p class="card-description">A daily-driver app for tech professionals and students who want curated, summarized headlines on the go.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🏢</div>
+      <h3 class="card-title">Enterprise News Digests</h3>
+      <p class="card-description">The same architecture can power internal briefing tools that summarize industry news for teams.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🤖</div>
+      <h3 class="card-title">AI Assistant Integration</h3>
+      <p class="card-description">The chatbot + summarization pipeline can be reused as a template for other content-based conversational apps.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE ADVANCEMENTS -->
+<section id="future">
+  <div class="section-header">
+    <div class="section-tag">What's Next</div>
+    <h2 class="section-title">Future Advancements</h2>
+  </div>
+  <div class="content-box">
+    <ul class="detail-list">
+      <li>AI-generated visual explanations for complex tech news</li>
+      <li>Dynamic infographics and interactive visual content</li>
+      <li>Voice-based news narration and audio summaries</li>
+      <li>Technology trend analysis and market insights</li>
+      <li>Bookmark and personalized news recommendations</li>
+      <li>Smart search across historical technology news</li>
+      <li>Advanced AI assistant capable of comparing and explaining technologies</li>
+      <li>Short AI-powered visual stories to make learning more engaging</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Connect with me</h2>
+    <p class="section-subtitle">Interested in this project or want to discuss opportunities?</p>
+  </div>
+  <div class="contact-grid">
+    <a href="tel:+918464985128" class="contact-card gemini-border">
+      <div class="contact-icon">📱</div>
+      <div class="contact-info">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91 8464985128</div>
+      </div>
+    </a>
+    <a href="mailto:maheshpaka115@gmail.com" class="contact-card gemini-border">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">maheshpaka115@gmail.com</div>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/mahesh-paka-jan115" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">💼</div>
+      <div class="contact-info">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">mahesh-paka-jan115</div>
+      </div>
+    </a>
+    <a href="https://github.com/Maheshgitt" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">⚙️</div>
+      <div class="contact-info">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">Maheshgitt</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer &nbsp;|&nbsp; <a href="index.html">Back to Portfolio</a></p>
+</footer>
+
+<script>
+  const carouselTotalSlides = 4;
+</script>
+<script src="script.js"></script>
+</body>
+</html>

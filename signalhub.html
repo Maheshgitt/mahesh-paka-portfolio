@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SignalHub – Audio Modulation Analyzer | Mahesh Paka</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">Mahesh <span>Paka</span></a>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">All Projects</a></li>
+      <li><a href="#problem">Problem Statement</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#future">Future Advancements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PROJECT HERO -->
+<section class="project-hero">
+  <div class="project-hero-content">
+    <div class="project-hero-card">
+      <div class="project-hero-text">
+        <div class="hero-badge">Embedded DSP</div>
+        <h1>SignalHub – <span class="highlight">Audio Modulation Analyzer</span></h1>
+        <div class="project-hero-meta">November 2025 &nbsp;•&nbsp; ESP32, INMP441, DSP, SPI TFT</div>
+        <p>Built an ESP32-based system to capture audio via INMP441 (I2S) and visualize real-time waveforms on a 2.8″ SPI TFT display. Implemented AM/FM modulation and down sampling with optimized embedded DSP routines.</p>
+        <div class="cta-buttons">
+          <a href="#project" class="btn btn-primary">View Project</a>
+          <a href="index.html#projects" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-hero-icon-box">
+        <img src="audio.jpeg" alt="SignalHub Project" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="detail-image-box">
+    <img src="signalhub.jpeg" alt="SignalHub Project">
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section id="problem">
+  <div class="section-header">
+    <div class="section-tag">Problem Statement</div>
+    <h2 class="section-title">Why this project?</h2>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Understanding analog modulation techniques like AM and FM is fundamental to communications engineering, but most learning is limited to theory or expensive lab equipment such as oscilloscopes and signal generators that aren't always accessible.</p>
+    <p class="content-text">There was a need for an affordable, portable, embedded platform that could capture real audio, apply modulation/demodulation and digital signal processing algorithms, and display the resulting waveforms visually in real time — making signal analysis hands-on and accessible.</p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+  <div class="section-header">
+    <div class="section-tag">The Project</div>
+    <h2 class="section-title">What I built</h2>
+    <p class="section-subtitle">An ESP32-based audio capture and modulation analysis system with live waveform visualization.</p>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Built an ESP32-based system to capture audio via the INMP441 I2S microphone and visualize real-time waveforms on a 2.8″ SPI TFT display. The system implements AM/FM modulation analysis with optimized embedded DSP routines for educational and practical applications.</p>
+  </div>
+  <div class="content-box">
+    <h3 class="card-title">Key Features</h3>
+    <ul class="detail-list">
+      <li>Real-time audio capture using I2S protocol with INMP441 microphone</li>
+      <li>Live waveform visualization on 2.8″ SPI TFT display</li>
+      <li>AM/FM modulation and demodulation algorithms</li>
+      <li>Down sampling with optimized DSP routines</li>
+      <li>User-friendly interface for signal analysis</li>
+    </ul>
+    <h3 class="detail-section-title">Technologies Used</h3>
+    <div class="card-tags">
+      <span class="tag">ESP32</span>
+      <span class="tag">INMP441</span>
+      <span class="tag">I2S Protocol</span>
+      <span class="tag">DSP</span>
+      <span class="tag">AM/FM Modulation</span>
+      <span class="tag">SPI TFT</span>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+  <div class="section-header">
+    <div class="section-tag">Results</div>
+    <h2 class="section-title">Outcomes</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">🎙️</div>
+      <h3 class="card-title">Real-Time Audio Capture</h3>
+      <p class="card-description">The I2S-based INMP441 microphone interface reliably streams audio samples to the ESP32 for processing.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">📈</div>
+      <h3 class="card-title">Live Waveform Display</h3>
+      <p class="card-description">Audio and modulated signals are rendered in real time on the 2.8″ SPI TFT display.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">📻</div>
+      <h3 class="card-title">Working AM/FM Pipeline</h3>
+      <p class="card-description">The embedded DSP routines successfully perform AM/FM modulation, demodulation, and down sampling.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <div class="section-header">
+    <div class="section-tag">Real-World Use</div>
+    <h2 class="section-title">Applications</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">🎓</div>
+      <h3 class="card-title">DSP &amp; Communications Teaching</h3>
+      <p class="card-description">A low-cost, hands-on tool for teaching modulation theory and digital signal processing.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🛠️</div>
+      <h3 class="card-title">Portable Signal Analyzer</h3>
+      <p class="card-description">A compact alternative to bench oscilloscopes for basic audio and RF signal visualization.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🔊</div>
+      <h3 class="card-title">Audio Processing Prototyping</h3>
+      <p class="card-description">A base platform for prototyping embedded audio effects, filters, and modulation schemes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE ADVANCEMENTS -->
+<section id="future">
+  <div class="section-header">
+    <div class="section-tag">What's Next</div>
+    <h2 class="section-title">Future Advancements</h2>
+  </div>
+  <div class="content-box">
+    <ul class="detail-list">
+      <li>Wireless transmission of captured audio data for remote analysis</li>
+      <li>Support for additional modulation schemes such as PSK and QAM</li>
+      <li>Spectrum analyzer mode with FFT-based frequency visualization</li>
+      <li>Data logging to an SD card for offline signal analysis</li>
+      <li>Companion mobile app for remote monitoring and control</li>
+      <li>Noise filtering and adaptive gain control for cleaner signal capture</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Connect with me</h2>
+    <p class="section-subtitle">Interested in this project or want to discuss opportunities?</p>
+  </div>
+  <div class="contact-grid">
+    <a href="tel:+918464985128" class="contact-card gemini-border">
+      <div class="contact-icon">📱</div>
+      <div class="contact-info">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91 8464985128</div>
+      </div>
+    </a>
+    <a href="mailto:maheshpaka115@gmail.com" class="contact-card gemini-border">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">maheshpaka115@gmail.com</div>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/mahesh-paka-jan115" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">💼</div>
+      <div class="contact-info">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">mahesh-paka-jan115</div>
+      </div>
+    </a>
+    <a href="https://github.com/Maheshgitt" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">⚙️</div>
+      <div class="contact-info">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">Maheshgitt</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer &nbsp;|&nbsp; <a href="index.html">Back to Portfolio</a></p>
+</footer>
+
+<script>
+  const carouselTotalSlides = 0;
+</script>
+<script src="script.js"></script>
+</body>
+</html>

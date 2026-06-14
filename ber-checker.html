@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>BER Checker – FPGA Hamming(7,4) SECDED | Mahesh Paka</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">Mahesh <span>Paka</span></a>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">All Projects</a></li>
+      <li><a href="#problem">Problem Statement</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#future">Future Advancements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PROJECT HERO -->
+<section class="project-hero">
+  <div class="project-hero-content">
+    <div class="project-hero-card">
+      <div class="project-hero-text">
+        <div class="hero-badge">FPGA &amp; Digital Design</div>
+        <h1>BER Checker – <span class="highlight">FPGA Hamming(7,4) SECDED</span></h1>
+        <div class="project-hero-meta">February 2026 &nbsp;•&nbsp; Verilog, Xilinx Vivado, Nexys 4 Artix-7</div>
+        <p>A complete Bit Error Rate checker implemented on the Nexys 4 Artix-7 FPGA board using Xilinx Vivado. The design evolved from basic XOR error detection through to a full Hamming(7,4) SECDED (Single Error Correction, Double Error Detection) implementation, with four selectable display modes, BTNC-triggered reset, and a comprehensive testbench with all 33 test cases verified and passing.</p>
+        <div class="cta-buttons">
+          <a href="#project" class="btn btn-primary">View Project</a>
+          <a href="index.html#projects" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-hero-icon-box">
+        <img src="bercheck.png" alt="BER Checker FPGA" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="image-carousel" id="image-carousel">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-slide"><img src="berchecker1.jpeg" alt="BER Checker FPGA Board"></div>
+      <div class="carousel-slide"><img src="berchecker2.jpeg" alt="BER Checker Vivado Simulation"></div>
+      <div class="carousel-slide"><img src="berchecker3.jpeg" alt="BER Checker Testbench Results"></div>
+      <div class="carousel-slide"><img src="berchecker4.jpeg" alt="BER Checker Display Modes"></div>
+    </div>
+    <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)">‹</button>
+    <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)">›</button>
+    <div class="carousel-indicators" id="carousel-indicators"></div>
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section id="problem">
+  <div class="section-header">
+    <div class="section-tag">Problem Statement</div>
+    <h2 class="section-title">Why this project?</h2>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Digital communication channels are inherently susceptible to noise, which can corrupt transmitted bits. Simple parity-based error detection can flag that an error occurred but cannot correct it, forcing costly retransmissions and reducing effective throughput.</p>
+    <p class="content-text">There was a need for a hardware-level error control scheme that could not only detect but also correct single-bit errors, detect double-bit errors, and provide a way to visualize and measure the resulting bit error rate directly on FPGA hardware — verified rigorously against a full testbench.</p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+  <div class="section-header">
+    <div class="section-tag">The Project</div>
+    <h2 class="section-title">What I built</h2>
+    <p class="section-subtitle">A Hamming(7,4) SECDED based BER checker implemented and verified on the Nexys 4 Artix-7 FPGA.</p>
+  </div>
+  <div class="content-box">
+    <p class="content-text">The design evolved from a basic XOR-based error detector into a full Hamming(7,4) Single Error Correction, Double Error Detection (SECDED) implementation. It includes four selectable display modes shown on the board's 7-segment displays, a debounced BTNC hardware reset, and a complete testbench in which all 33 test cases were verified and passed.</p>
+  </div>
+  <div class="content-box">
+    <h3 class="card-title">Key Features</h3>
+    <ul class="detail-list">
+      <li>Hamming(7,4) SECDED for single-bit correction and double-bit detection</li>
+      <li>Four display modes for real-time BER monitoring on 7-segment display</li>
+      <li>BTNC hardware reset with debounce logic</li>
+      <li>All 33 testbench cases verified and passing</li>
+      <li>Synthesized and implemented on Nexys 4 Artix-7 FPGA</li>
+      <li>Modular Verilog design with clean timing constraints</li>
+    </ul>
+    <h3 class="detail-section-title">Technologies Used</h3>
+    <div class="card-tags">
+      <span class="tag">Verilog</span>
+      <span class="tag">Xilinx Vivado</span>
+      <span class="tag">Nexys 4 Artix-7</span>
+      <span class="tag">Hamming(7,4)</span>
+      <span class="tag">SECDED</span>
+      <span class="tag">FPGA</span>
+      <span class="tag">Testbench</span>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+  <div class="section-header">
+    <div class="section-tag">Results</div>
+    <h2 class="section-title">Outcomes</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">✅</div>
+      <h3 class="card-title">100% Test Coverage</h3>
+      <p class="card-description">All 33 testbench cases verified and passed, confirming correct encode/decode/correction behavior.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🔧</div>
+      <h3 class="card-title">Single-Bit Error Correction</h3>
+      <p class="card-description">The decoder transparently corrects single-bit transmission errors without retransmission.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🖥️</div>
+      <h3 class="card-title">On-Board Visualization</h3>
+      <p class="card-description">Four selectable 7-segment display modes let users monitor BER statistics directly on the FPGA board.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">⚙️</div>
+      <h3 class="card-title">Modular, Reusable RTL</h3>
+      <p class="card-description">Clean, modular Verilog blocks with proper timing constraints make the design easy to extend or reuse.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <div class="section-header">
+    <div class="section-tag">Real-World Use</div>
+    <h2 class="section-title">Applications</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">📡</div>
+      <h3 class="card-title">Communication Systems</h3>
+      <p class="card-description">Error correction coding for noisy wireless and wired transmission links.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">💾</div>
+      <h3 class="card-title">Memory &amp; Storage</h3>
+      <p class="card-description">ECC schemes similar to Hamming codes protect data integrity in RAM and storage devices.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🎓</div>
+      <h3 class="card-title">Digital Design Education</h3>
+      <p class="card-description">A practical, hardware-verified reference for teaching error correction coding and FPGA design flow.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE ADVANCEMENTS -->
+<section id="future">
+  <div class="section-header">
+    <div class="section-tag">What's Next</div>
+    <h2 class="section-title">Future Advancements</h2>
+  </div>
+  <div class="content-box">
+    <ul class="detail-list">
+      <li>Extend to longer Hamming or BCH codes for multi-bit error correction</li>
+      <li>Real-time BER measurement over an actual wireless or wired communication channel</li>
+      <li>Adaptive coding scheme that switches code rate based on channel noise conditions</li>
+      <li>UART/SPI interface for live data logging and analysis on a connected PC</li>
+      <li>Porting the design to ASIC for power and area optimization</li>
+      <li>Graphical BER visualization dashboard via a PC-connected interface</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Connect with me</h2>
+    <p class="section-subtitle">Interested in this project or want to discuss opportunities?</p>
+  </div>
+  <div class="contact-grid">
+    <a href="tel:+918464985128" class="contact-card gemini-border">
+      <div class="contact-icon">📱</div>
+      <div class="contact-info">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91 8464985128</div>
+      </div>
+    </a>
+    <a href="mailto:maheshpaka115@gmail.com" class="contact-card gemini-border">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">maheshpaka115@gmail.com</div>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/mahesh-paka-jan115" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">💼</div>
+      <div class="contact-info">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">mahesh-paka-jan115</div>
+      </div>
+    </a>
+    <a href="https://github.com/Maheshgitt" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">⚙️</div>
+      <div class="contact-info">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">Maheshgitt</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer &nbsp;|&nbsp; <a href="index.html">Back to Portfolio</a></p>
+</footer>
+
+<script>
+  const carouselTotalSlides = 4;
+</script>
+<script src="script.js"></script>
+</body>
+</html>

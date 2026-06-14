@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Neuromorphic Neuron–Synapse Circuit | Mahesh Paka</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="index.html" class="logo">Mahesh <span>Paka</span></a>
+    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">All Projects</a></li>
+      <li><a href="#problem">Problem Statement</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#outcomes">Outcomes</a></li>
+      <li><a href="#applications">Applications</a></li>
+      <li><a href="#future">Future Advancements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- PROJECT HERO -->
+<section class="project-hero">
+  <div class="project-hero-content">
+    <div class="project-hero-card">
+      <div class="project-hero-text">
+        <div class="hero-badge">Neuromorphic VLSI</div>
+        <h1>Neuromorphic <span class="highlight">Neuron–Synapse Circuit</span></h1>
+        <div class="project-hero-meta">December 2025 &nbsp;•&nbsp; Cadence Virtuoso, Spectre, 90nm CMOS</div>
+        <p>Designed a transistor-level neuromorphic synapse and neuron cell to emulate biological spike behavior. Implemented a current-mirror output stage to convert synapse into measurable neuron spike responses using 90nm CMOS technology.</p>
+        <div class="cta-buttons">
+          <a href="#project" class="btn btn-primary">View Project</a>
+          <a href="index.html#projects" class="btn btn-secondary">Back to Portfolio</a>
+        </div>
+      </div>
+      <div class="project-hero-icon-box">
+        <img src="neuromorphic.jpeg" alt="Neuromorphic Circuit" onerror="this.style.display='none';">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="image-carousel" id="image-carousel">
+    <div class="carousel-track" id="carousel-track">
+      <div class="carousel-slide"><img src="neuromorphicdesign.jpeg" alt="Neuromorphic Circuit Design"></div>
+      <div class="carousel-slide"><img src="neuromorphicwaveform.jpeg" alt="Neuromorphic Circuit Waveform"></div>
+    </div>
+    <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)">‹</button>
+    <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)">›</button>
+    <div class="carousel-indicators" id="carousel-indicators"></div>
+  </div>
+</section>
+
+<!-- PROBLEM STATEMENT -->
+<section id="problem">
+  <div class="section-header">
+    <div class="section-tag">Problem Statement</div>
+    <h2 class="section-title">Why this project?</h2>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Traditional von Neumann computing architectures separate memory and processing, leading to high power consumption and bottlenecks when running brain-inspired, event-driven workloads such as spiking neural networks. As AI workloads grow, there is increasing demand for hardware that can natively emulate neural behavior at the transistor level.</p>
+    <p class="content-text">This project set out to design and simulate analog circuits — at the synapse and neuron level — that mimic biological spike generation and signal transmission, forming a foundational building block for low-power, brain-inspired (neuromorphic) computing systems.</p>
+  </div>
+</section>
+
+<!-- PROJECT -->
+<section id="project">
+  <div class="section-header">
+    <div class="section-tag">The Project</div>
+    <h2 class="section-title">What I built</h2>
+    <p class="section-subtitle">A transistor-level neuromorphic synapse and neuron cell built and simulated in 90nm CMOS.</p>
+  </div>
+  <div class="content-box">
+    <p class="content-text">Designed a transistor-level neuromorphic synapse and neuron cell to emulate biological spike behavior. This project explores brain-inspired computing architectures that can process information more efficiently than traditional von Neumann systems, implementing a current-mirror output stage to convert synapse activity into measurable neuron spike responses.</p>
+  </div>
+  <div class="content-box">
+    <h3 class="card-title">Key Features</h3>
+    <ul class="detail-list">
+      <li>Implemented using 90nm CMOS technology for optimal performance</li>
+      <li>Current-mirror output stage for measurable neuron spike responses</li>
+      <li>Biological spike behavior emulation with tunable parameters</li>
+      <li>Low power consumption design suitable for edge computing</li>
+      <li>Scalable architecture for neural network implementations</li>
+    </ul>
+    <h3 class="detail-section-title">Technologies Used</h3>
+    <div class="card-tags">
+      <span class="tag">Cadence Virtuoso</span>
+      <span class="tag">Spectre Simulator</span>
+      <span class="tag">90nm CMOS</span>
+      <span class="tag">Analog Design</span>
+      <span class="tag">SPICE</span>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section id="outcomes">
+  <div class="section-header">
+    <div class="section-tag">Results</div>
+    <h2 class="section-title">Outcomes</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">⚡</div>
+      <h3 class="card-title">Working Spike Generation</h3>
+      <p class="card-description">The neuron cell successfully produces measurable spike responses analogous to biological neurons.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🔋</div>
+      <h3 class="card-title">Low-Power Operation</h3>
+      <p class="card-description">The 90nm CMOS implementation keeps power consumption low, suitable for always-on edge devices.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🎛️</div>
+      <h3 class="card-title">Tunable Behavior</h3>
+      <p class="card-description">Circuit parameters can be tuned to adjust spike rate and synaptic weight, mimicking learning behavior.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🧩</div>
+      <h3 class="card-title">Scalable Building Block</h3>
+      <p class="card-description">The neuron-synapse cell is designed to be replicated into larger spiking neural network arrays.</p>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATIONS -->
+<section id="applications">
+  <div class="section-header">
+    <div class="section-tag">Real-World Use</div>
+    <h2 class="section-title">Applications</h2>
+  </div>
+  <div class="cards-grid">
+    <div class="card gemini-border">
+      <div class="card-icon">🧠</div>
+      <h3 class="card-title">Spiking Neural Networks</h3>
+      <p class="card-description">Building blocks for hardware-based spiking neural network accelerators.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">📟</div>
+      <h3 class="card-title">Edge AI Hardware</h3>
+      <p class="card-description">Ultra-low-power inference circuits for always-on sensors and IoT devices.</p>
+    </div>
+    <div class="card gemini-border">
+      <div class="card-icon">🔬</div>
+      <h3 class="card-title">Brain-Inspired Computing Research</h3>
+      <p class="card-description">A foundational analog block for research into next-generation neuromorphic architectures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FUTURE ADVANCEMENTS -->
+<section id="future">
+  <div class="section-header">
+    <div class="section-tag">What's Next</div>
+    <h2 class="section-title">Future Advancements</h2>
+  </div>
+  <div class="content-box">
+    <ul class="detail-list">
+      <li>Scaling the design into an interconnected array of neuron-synapse cells forming a spiking neural network</li>
+      <li>On-chip learning through spike-timing-dependent plasticity (STDP)</li>
+      <li>Fabrication and silicon validation of the designed circuit</li>
+      <li>Integration with digital control logic for a hybrid analog-digital neuromorphic chip</li>
+      <li>Power and area optimization for large-scale neuromorphic arrays</li>
+      <li>Benchmarking against software-based spiking neural network models</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header">
+    <div class="section-tag">Get in Touch</div>
+    <h2 class="section-title">Connect with me</h2>
+    <p class="section-subtitle">Interested in this project or want to discuss opportunities?</p>
+  </div>
+  <div class="contact-grid">
+    <a href="tel:+918464985128" class="contact-card gemini-border">
+      <div class="contact-icon">📱</div>
+      <div class="contact-info">
+        <div class="contact-label">Phone</div>
+        <div class="contact-value">+91 8464985128</div>
+      </div>
+    </a>
+    <a href="mailto:maheshpaka115@gmail.com" class="contact-card gemini-border">
+      <div class="contact-icon">✉️</div>
+      <div class="contact-info">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">maheshpaka115@gmail.com</div>
+      </div>
+    </a>
+    <a href="https://www.linkedin.com/in/mahesh-paka-jan115" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">💼</div>
+      <div class="contact-info">
+        <div class="contact-label">LinkedIn</div>
+        <div class="contact-value">mahesh-paka-jan115</div>
+      </div>
+    </a>
+    <a href="https://github.com/Maheshgitt" target="_blank" class="contact-card gemini-border">
+      <div class="contact-icon">⚙️</div>
+      <div class="contact-info">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">Maheshgitt</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Mahesh Paka — Electronics &amp; Embedded Systems Engineer &nbsp;|&nbsp; <a href="index.html">Back to Portfolio</a></p>
+</footer>
+
+<script>
+  const carouselTotalSlides = 2;
+</script>
+<script src="script.js"></script>
+</body>
+</html>
